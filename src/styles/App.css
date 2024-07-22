@@ -1,0 +1,73 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: row; /* Default horizontal layout */
+}
+
+.left-column, .right-column {
+  padding: 20px;
+}
+
+/* Large screens: default layout */
+.left-column {
+  flex: 2;
+  border-right: 1px solid #fff;
+}
+
+.right-column {
+  flex: 1;
+  border-left: 1px solid #fff;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column; /* Stack columns vertically */
+  }
+  
+  .left-column, .right-column {
+    border: none; /* Remove borders for better stacking */
+  }
+  
+  .left-column {
+    margin-bottom: 20px; /* Space between columns */
+  }
+  
+  .right-column {
+    border-top: 1px solid #fff;
+    margin-top: 20px; /* Space between columns */
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column; /* Stack columns vertically */
+  }
+  
+  .left-column, .right-column {
+    padding: 10px;
+    border: none; /* Remove borders for mobile view */
+  }
+  
+  .left-column {
+    margin-bottom: 20px; /* Space between columns */
+  }
+  
+  .right-column {
+    border-top: 1px solid #fff;
+    margin-top: 20px; /* Space between columns */
+  }
+}

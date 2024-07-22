@@ -1,0 +1,118 @@
+.WeatherCard {
+    background-color: #222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .current-weather-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Adjust gap as needed */
+  }
+  
+  .current-weather-info {
+    flex: 1;
+  }
+  .current-weather-image {
+    flex: 0;
+  }
+  
+  /* WeatherCard.css */
+
+.eight-day-forecast-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Adjust gap between items */
+}
+
+.eight-day-forecast-item {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex; /* Align content horizontally within each item */
+  align-items: center; /* Center items vertically */
+  color: white; /* Ensure text is readable */
+}
+
+.forecast-icon {
+  width: 50px; /* Adjust the icon size as needed */
+  height: 50px;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.forecast-details {
+  flex: 1; /* Allow text details to take remaining space */
+}
+
+.forecast-details p {
+  margin: 0; /* Remove default margin */
+}
+
+  
+  .weather-icon {
+    width: 200px; /* Set the width to a larger size */
+    height: 200px; /* Set the height to ensure it's large */
+    object-fit: cover; /* Ensure proper scaling */
+  }
+  .WeatherCard img {
+    width: 50px;
+    height: 50px;
+  }
+  .forecast-container {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling if needed */
+    gap: 10px; /* Space between items */
+  }
+  
+  .forecast-item {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    min-width: 100px; /* Minimum width for each item */
+  }
+  .WeatherCard ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .WeatherCard li {
+    margin-bottom: 10px;
+  }
+  .air-conditions-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .air-condition-item {
+    flex: 1;
+    min-width: 120px; /* Adjust as needed */
+    text-align: center;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .air-condition-item svg {
+    color: #fff;
+    font-size: 1.2em;
+  }
+  @media (max-width: 768px) {
+    .forecast-container {
+      flex-direction: column;
+      overflow-x: hidden; /* Hide horizontal scroll on small screens */
+    }
+  
+    .forecast-item {
+      min-width: auto; /* Allow items to resize */
+    }
+  }
+  
